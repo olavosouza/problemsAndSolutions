@@ -18,11 +18,10 @@ public class PalindromeNumber {
 
         var stringNumber = Integer.toString(x);
 
-
-        var lenght = stringNumber.length();
+        var length = stringNumber.length();
 
         for (int i = 0; i < stringNumber.length() / 2; i++) {
-            if (stringNumber.charAt(i) != stringNumber.charAt(lenght - 1 - i)) {
+            if (stringNumber.charAt(i) != stringNumber.charAt(length - 1 - i)) {
                 return false;
             }
         }
